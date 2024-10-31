@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS sm_ahorcadoDB;
+
+USE sm_ahorcadoDB;
+
+CREATE TABLE IF NOT EXISTS palabra (
+    palabra_id INT AUTO_INCREMENT PRIMARY KEY,
+    palabra VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS puntuaciones (
+    puntuacion_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre CHAR(5) NOT NULL,
+    puntaje INT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
